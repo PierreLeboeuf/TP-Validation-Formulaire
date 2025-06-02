@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+
+    <form>
+        <ul>
+            <!-- Accessibilité avec fullname pour cliquer sur le texte et avoir accès a l'encadrer -->
+            <li class="nom"> <label for="nom">Nom :</label> <br>
+                <input type="text" id="nom" placeholder="">
+            </li>
+            <li class="prenom"> <label for="prenom">Prénom :</label> <br>
+                <input type="text" id="prenom" placeholder="">
+            </li>
+            <li class="email"> <label for="email">Email :</label> <br>
+                <input type="text" id="email" placeholder="">
+            </li>
+            <li class="password"> <label for="password">Mot de passe :</label> <br>
+                <input type="password" id="password" placeholder="">
+            </li>
+            <li class="nom"> <label for="age">Âge</label> <br>
+                <input type="text" id="age" placeholder="">
+            </li>
+        </ul>
+        <button class="button">S'inscrire</button>
+    </form>
+
 </body>
+
 </html>
