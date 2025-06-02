@@ -5,31 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <form>
+    <form class = form id="form">
         <ul>
             <!-- Accessibilité avec fullname pour cliquer sur le texte et avoir accès a l'encadrer -->
             <li class="nom"> <label for="nom">Nom :</label> <br>
-                <input type="text" id="nom" placeholder="">
+                <input type="text" id="nom" placeholder=""> <br>
+                <span id="nomErreur" style="color: red;"></span>
             </li>
             <li class="prenom"> <label for="prenom">Prénom :</label> <br>
-                <input type="text" id="prenom" placeholder="">
+                <input type="text" id="prenom" placeholder=""> <br>
+                <span id="prenomErreur" style="color: red;"></span>
             </li>
             <li class="email"> <label for="email">Email :</label> <br>
-                <input type="text" id="email" placeholder="">
+                <input type="text" id="email" placeholder=""><br>
+                 <span id="emailErreur" style="color: red;"></span>
             </li>
             <li class="password"> <label for="password">Mot de passe :</label> <br>
-                <input type="password" id="password" placeholder="">
+                <input type="password" id="password" placeholder=""><br>
+                 <span id="passwordErreur" style="color: red;"></span>
             </li>
-            <li class="nom"> <label for="age">Âge</label> <br>
-                <input type="text" id="age" placeholder="">
+            <li class="age"> <label for="age">Âge</label> <br>
+                <input type="text" id="age" placeholder=""><br>
+                  <span id="ageErreur" style="color: red;"></span>
             </li>
+            <li class="bouton"><button type="submit">S'inscrire</button>
+            </li>
+
         </ul>
-        <button class="button">S'inscrire</button>
+
     </form>
 
 </body>
