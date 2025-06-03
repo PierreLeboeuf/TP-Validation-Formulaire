@@ -79,6 +79,8 @@ formulaire.addEventListener('submit', function (event) {
     const majuscule = /[A-Z]/; // Au moins une majuscule
     const miniscule= /[a-z]/; // Au moins une minuscule
     const chiffre = /[0-9]/; // Au moins un chiffre
+// ou  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
 
     if (passwordValue === '') {
         passwordErreur.textContent = "Le mot de passe est obligatoire.";
@@ -108,7 +110,7 @@ formulaire.addEventListener('submit', function (event) {
         age.classList.add('error-border'); // Optionnel: ajoute une bordure rouge
         isValid = false;
     }
-
+// ou if(age.value < 18 || age.value > 99 || isNaN(age.value)) isNaN pour vérifier que ce n'est pas un nombre
 
 
     // Si le formulaire est valide, vous pouvez le soumettre ou effectuer d'autres actions
